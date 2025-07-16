@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyResumeMaker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Maker</h1>
+    <form id="resumeForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <textarea id="summary" placeholder="Professional Summary" required></textarea>
+      
+      <h3>Education</h3>
+      <input type="text" id="education" placeholder="e.g. B.Sc. in CS, XYZ University">
+
+      <h3>Experience</h3>
+      <input type="text" id="experience" placeholder="e.g. Web Developer at ABC Company">
+
+      <h3>Skills</h3>
+      <input type="text" id="skills" placeholder="e.g. HTML, CSS, JavaScript">
+
+      <button type="submit">Generate Resume</button>
+      <button type="button" onclick="downloadPDF()">Download PDF</button>
+    </form>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
